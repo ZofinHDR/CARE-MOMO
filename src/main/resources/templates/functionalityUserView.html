@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard User</title>
+<!-- Bootstrap CSS -->
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+	crossorigin="anonymous">
+</head>
+<body>
+	<!-- CDN -->
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+	<script src="https://www.w3schools.com/js/myScript.js"></script>
+	<!-- CDN -->
+	<style type="text/css">
+.btn-circle.btn-sm {
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	font-size: 8px;
+	text-align: center;
+}
+</style>
+
+	<!-- Content -->
+	<div class="container bg-secondary" id="bigOne">
+		<div class="row bg-secondary" id="header">
+			<br> <br>
+			<h1 class="display-4 mt-3 mb-3">
+				<strong> Willkommen in Lios Moralmenü</strong>
+			</h1>
+		</div>
+		<div class="bg-info col">
+			<div class="container bg-info" id="mainbox">
+				<div class="row bg-info">
+					<div class="mb-1">
+						<img alt="Lio" src="Lio1.png" height="184" width="287" />
+					</div>
+				</div>
+				<div class="bg-info row ms-2 me-2">
+					<ul class="nav nav-tabs border-bottom border-secondary">
+						<li class="nav-item"><a class="nav-link fs-5"
+							aria-current="page" href="#" th:href="@{/infoUserView}">Angaben
+								zur Person</a></li>
+						<li class="nav-item"><a class="nav-link fs-5" href="#"
+							th:href="@{/socialUserView}">Soziale Aspekte</a></li>
+						<li class="nav-item"><a class="nav-link fs-5" href="#"
+							th:href="@{/transparencyUserView}">Transparenz</a></li>
+						<li class="nav-item"><a class="nav-link active fs-5" href="#"
+							th:href="@{/functionalityUserView}">Funktionalität</a></li>
+					</ul>
+				</div>
+				<div class="row ms-2 me-2">
+					<div style="display: flex;"
+						class="col-9 border-secondary border-bottom mt-3">
+						<button type="button"
+							class="btn btn-primary btn-circle btn-sm mt-1 ms-2 fs-6"
+							data-bs-toggle="tooltip" data-bs-placement="right"
+							title="Wenn diese Funktion aktiviert wird, alarmiert Lio das Pflegepersonal, wenn die Sensoren (Lidar, Ultraschall. Sprachanalyse etc.) eine Gefahr für dich erkennen.">?</button>
+						<p class="fs-4 ms-4">Soll Lio das Personal alarmieren, wenn
+							die Sensoren Gefahr erkennen?</p>
+					</div>
+					<div class="mt-4 col float-end border-secondary border-bottom">
+						<span class="fs-5"><strong>Nein</strong></span> <input type="range"
+							class="range-field w-70" min="0" max="1"> <span
+							class="fs-5"><strong>Ja</strong></span>
+					</div>
+					<br> <br>
+				</div>
+				<div class="row ms-2 me-2">
+					<div style="display: flex;"
+						class="col-9 border-secondary border-bottom mt-3">
+						<button type="button"
+							class="btn btn-primary btn-circle btn-sm mt-1 ms-2 fs-6"
+							data-bs-toggle="tooltip" data-bs-placement="right"
+							title="Wenn diese Funktion aktiviert wird, wiederholt Lio gewisse Anweisungen nach einer definierten Zeit. Dies geschieht, bis die Anweisung durchgeführt oder Pflegepersonal alarmiert wur-de. ">?</button>
+						<p class="fs-4 ms-4">Soll Lio bei demenzkranken Personen
+							Anweisungen wiederholen?</p>
+					</div>
+					<div class="mt-4 col float-end border-secondary border-bottom">
+						<span class="fs-5"><strong>Nein</strong></span> <input type="range"
+							class="range-field w-70" min="0" max="1"> <span
+							class="fs-5"><strong>Ja</strong></span>
+					</div>
+					<br> <br>
+				</div>
+				<div class="row ms-2 me-2">
+					<div style="display: flex;"
+						class="col-9 border-secondary border-bottom mt-3">
+						<button type="button"
+							class="btn btn-primary btn-circle btn-sm mt-1 ms-2 fs-6"
+							data-bs-toggle="tooltip" data-bs-placement="right"
+							title="Wenn diese Funktion aktiviert wird, darf Lio Rätsel, Aktivitäten oder Spiele als Wettbewerb anbieten.">?</button>
+						<p class="fs-4 ms-4">Soll Lio Entertainmentfunktionen
+							anbieten?</p>
+					</div>
+					<div class="mt-4 col float-end border-secondary border-bottom">
+						<span class="fs-5"><strong>Nein</strong></span> <input type="range"
+							class="range-field w-70" min="0" max="1"> <span
+							class="fs-5"><strong>Ja</strong></span>
+					</div>
+					<br> <br>
+				</div>
+				<div class="row ms-2 me-2">
+					<div style="display: flex;"
+						class="col-9 border-secondary border-bottom mt-3">
+						<button type="button"
+							class="btn btn-primary btn-circle btn-sm mt-1 ms-2 fs-6"
+							data-bs-toggle="tooltip" data-bs-placement="right"
+							title="Wenn diese Funktion aktiviert wird, überbrückt Lio Wartezeiten mit Witzen, Gespräche oder andere Aktivitäten.">?</button>
+						<p class="fs-4 ms-4">Soll Lio Wartezeiten mit Aktionen
+							überbrücken?</p>
+					</div>
+					<div class="mt-4 col float-end border-secondary border-bottom">
+						<span class="fs-5"><strong>Nein</strong></span> <input type="range"
+							class="range-field w-70" min="0" max="1"> <span
+							class="fs-5"><strong>Ja</strong></span>
+					</div>
+					<br> <br>
+				</div>
+				<div class="row ms-2 me-2">
+					<div style="display: flex;"
+						class="col-8 border-secondary border-bottom mt-3">
+						<button type="button"
+							class="btn btn-primary btn-circle btn-sm mt-1 ms-2 fs-6"
+							data-bs-toggle="tooltip" data-bs-placement="right"
+							title="Bei dieser Funktion werden je nach Auswahl Lios Handlungen / Aktionen schneller oder langsamer durchgeführt.">?</button>
+						<p class="fs-4 ms-4">Soll Lio seine Handlungen/Aktionen
+							schnell oder langsam durchführen?</p>
+					</div>
+					<div class="mt-4 ps-5 col float-end border-secondary border-bottom">
+						<span class="fs-5 ms-3 ps-4"><strong>Schnell</strong></span> <input
+							type="range" class="range-field w-70 ms-2" min="0" max="1">
+						<span class="fs-5"><strong>Langsam</strong></span>
+					</div>
+					<br> <br>
+				</div>
+				<div class="row ms-2 me-2">
+					<div style="display: flex;"
+						class="col-8 border-secondary border-bottom mt-3">
+						<button type="button"
+							class="btn btn-primary btn-circle btn-sm mt-1 ms-2 fs-6"
+							data-bs-toggle="tooltip" data-bs-placement="right"
+							title="Wenn die Option Mundart gewählt wird, wird eine Schweizer Mundart für die Sprachfunktion von Lio verwendet. Ansonsten gilt Standardsprache.">?</button>
+						<p class="fs-4 ms-4">Soll Lio in Mundart oder Schriftsprache
+							antworten?</p>
+					</div>
+					<div class="mt-4 ps-4 col float-end border-secondary border-bottom">
+						<span class="fs-5 ms-1"><strong>Schriftsprache</strong></span> <input
+							type="range" class="range-field w-70" min="0" max="1"> <span
+							class="fs-5"><strong>Mundart</strong></span>
+					</div>
+					<br> <br>
+				</div>
+				<div class=row>
+					<div class="col-3 mb-3 mt-3">
+						<a href="#" th:href="@{/transparencyUserView}" type="button"
+							class="btn 
+					btn-light me-4">Zurück </a> <a href="#"
+							th:href="@{/homeUserView}" type="button"
+							class="btn
+					btn-light">Weiter zu Home</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<p>Moralmenu by FHNW</p>
+	</div>
+	
+	<!-- Jquery -->
+	<script>
+	var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+	var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+ 		 return new bootstrap.Tooltip(tooltipTriggerEl)
+	})
+	</script>
+</body>
+</html>
+
