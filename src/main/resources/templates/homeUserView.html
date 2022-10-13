@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns:sec="http://www.thymeleaf.org"
+	  lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,7 +38,7 @@
 			<div class="container bg-info" id="mainbox">
 				<div class="row ms-2 me-2 bg-info border-bottom border-secondary">
 					<div class="mb-1">
-						<img alt="Lio" src="Lio2.png" height="184" width="287" />
+						<img alt="Lio" th:src="@{/Lio2.png}"  height="184" width="287" />
 					</div>
 				</div>
 				<div class="bg-info row mt-5 pb-5">

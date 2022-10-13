@@ -8,7 +8,6 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 
 //Main method of the moral module
-@EnableWebMvc
 @SpringBootApplication
 public class LioMoralmenuApplication {
 
