@@ -25,11 +25,11 @@ public class Resident {
     private String nickname;
     private String nationality;
     private String lastJob;
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL)
     private Social social;
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL)
     private Transparency transparency;
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL)
     private Functionality functionality;
 
     public Resident() {
