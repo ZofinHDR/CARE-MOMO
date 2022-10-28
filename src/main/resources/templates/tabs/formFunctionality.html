@@ -1,130 +1,127 @@
 <div id="functionalityView" th:fragment="functionalityView">
-    <div class="row ms-2 me-2">
-        <div style="display: flex;"
-             class="col-9 border-secondary border-bottom mt-3">
-            <button type="button"
-                    class="btn btn-primary btn-circle btn-sm mt-1 ms-2 fs-6"
-                    data-bs-toggle="tooltip" data-bs-placement="right"
-                    title="Wenn diese Funktion aktiviert wird, alarmiert Lio das Pflegepersonal, wenn die Sensoren (Lidar, Ultraschall. Sprachanalyse etc.) eine Gefahr für dich erkennen.">
-                ?
-            </button>
-            <p class="fs-4 ms-4">Soll Lio das Personal alarmieren, wenn
-                die Sensoren Gefahr erkennen?</p>
+    <form id="formFunctionality">
+        <div class="row ms-2 me-2">
+            <div style="display: flex;"
+                 class="col-9 border-secondary border-bottom mt-3">
+                <button type="button"
+                        class="btn btn-primary btn-circle btn-sm mt-1 ms-2 fs-6"
+                        data-bs-toggle="tooltip" data-bs-placement="right"
+                        title="Wenn diese Funktion aktiviert wird, alarmiert Lio das Pflegepersonal, wenn die Sensoren (Lidar, Ultraschall. Sprachanalyse etc.) eine Gefahr für dich erkennen.">
+                    ?
+                </button>
+                <p class="fs-4 ms-4">Soll Lio das Personal alarmieren, wenn
+                    die Sensoren Gefahr erkennen?</p>
+            </div>
+            <div class="mt-4 col float-end border-secondary border-bottom">
+                <span class="fs-5"><strong>Nein</strong></span>
+                <input type="range" class="range-field w-70" min="0" max="1" name="fq1">
+                <span class="fs-5"><strong>Ja</strong></span>
+            </div>
+            <br> <br>
         </div>
-        <div class="mt-4 col float-end border-secondary border-bottom">
-            <span class="fs-5"><strong>Nein</strong></span> <input type="range"
-                                                                   class="range-field w-70" min="0" max="1">
-            <span
-                    class="fs-5"><strong>Ja</strong></span>
+        <div class="row ms-2 me-2">
+            <div style="display: flex;"
+                 class="col-9 border-secondary border-bottom mt-3">
+                <button type="button"
+                        class="btn btn-primary btn-circle btn-sm mt-1 ms-2 fs-6"
+                        data-bs-toggle="tooltip" data-bs-placement="right"
+                        title="Wenn diese Funktion aktiviert wird, wiederholt Lio gewisse Anweisungen nach einer definierten Zeit. Dies geschieht, bis die Anweisung durchgeführt oder Pflegepersonal alarmiert wur-de. ">
+                    ?
+                </button>
+                <p class="fs-4 ms-4">Soll Lio bei demenzkranken Personen
+                    Anweisungen wiederholen?</p>
+            </div>
+            <div class="mt-4 col float-end border-secondary border-bottom">
+                <span class="fs-5"><strong>Nein</strong></span>
+                <input type="range" class="range-field w-70" min="0" max="1" name="fq2">
+                <span class="fs-5"><strong>Ja</strong></span>
+            </div>
+            <br> <br>
         </div>
-        <br> <br>
-    </div>
-    <div class="row ms-2 me-2">
-        <div style="display: flex;"
-             class="col-9 border-secondary border-bottom mt-3">
-            <button type="button"
-                    class="btn btn-primary btn-circle btn-sm mt-1 ms-2 fs-6"
-                    data-bs-toggle="tooltip" data-bs-placement="right"
-                    title="Wenn diese Funktion aktiviert wird, wiederholt Lio gewisse Anweisungen nach einer definierten Zeit. Dies geschieht, bis die Anweisung durchgeführt oder Pflegepersonal alarmiert wur-de. ">
-                ?
-            </button>
-            <p class="fs-4 ms-4">Soll Lio bei demenzkranken Personen
-                Anweisungen wiederholen?</p>
+        <div class="row ms-2 me-2">
+            <div style="display: flex;"
+                 class="col-9 border-secondary border-bottom mt-3">
+                <button type="button"
+                        class="btn btn-primary btn-circle btn-sm mt-1 ms-2 fs-6"
+                        data-bs-toggle="tooltip" data-bs-placement="right"
+                        title="Wenn diese Funktion aktiviert wird, darf Lio Rätsel, Aktivitäten oder Spiele als Wettbewerb anbieten.">
+                    ?
+                </button>
+                <p class="fs-4 ms-4">Soll Lio Entertainmentfunktionen
+                    anbieten?</p>
+            </div>
+            <div class="mt-4 col float-end border-secondary border-bottom">
+                <span class="fs-5"><strong>Nein</strong></span>
+                <input type="range" class="range-field w-70" min="0" max="1" name="fq3">
+                <span class="fs-5"><strong>Ja</strong></span>
+            </div>
+            <br> <br>
         </div>
-        <div class="mt-4 col float-end border-secondary border-bottom">
-            <span class="fs-5"><strong>Nein</strong></span> <input type="range"
-                                                                   class="range-field w-70" min="0" max="1">
-            <span
-                    class="fs-5"><strong>Ja</strong></span>
+        <div class="row ms-2 me-2">
+            <div style="display: flex;"
+                 class="col-9 border-secondary border-bottom mt-3">
+                <button type="button"
+                        class="btn btn-primary btn-circle btn-sm mt-1 ms-2 fs-6"
+                        data-bs-toggle="tooltip" data-bs-placement="right"
+                        title="Wenn diese Funktion aktiviert wird, überbrückt Lio Wartezeiten mit Witzen, Gespräche oder andere Aktivitäten.">
+                    ?
+                </button>
+                <p class="fs-4 ms-4">Soll Lio Wartezeiten mit Aktionen
+                    überbrücken?</p>
+            </div>
+            <div class="mt-4 col float-end border-secondary border-bottom">
+                <span class="fs-5"><strong>Nein</strong></span>
+                <input type="range" class="range-field w-70" min="0" max="1" name="fq4">
+                <span
+                        class="fs-5"><strong>Ja</strong></span>
+            </div>
+            <br> <br>
         </div>
-        <br> <br>
-    </div>
-    <div class="row ms-2 me-2">
-        <div style="display: flex;"
-             class="col-9 border-secondary border-bottom mt-3">
-            <button type="button"
-                    class="btn btn-primary btn-circle btn-sm mt-1 ms-2 fs-6"
-                    data-bs-toggle="tooltip" data-bs-placement="right"
-                    title="Wenn diese Funktion aktiviert wird, darf Lio Rätsel, Aktivitäten oder Spiele als Wettbewerb anbieten.">
-                ?
-            </button>
-            <p class="fs-4 ms-4">Soll Lio Entertainmentfunktionen
-                anbieten?</p>
+        <div class="row ms-2 me-2">
+            <div style="display: flex;"
+                 class="col-8 border-secondary border-bottom mt-3">
+                <button type="button"
+                        class="btn btn-primary btn-circle btn-sm mt-1 ms-2 fs-6"
+                        data-bs-toggle="tooltip" data-bs-placement="right"
+                        title="Bei dieser Funktion werden je nach Auswahl Lios Handlungen / Aktionen schneller oder langsamer durchgeführt.">
+                    ?
+                </button>
+                <p class="fs-4 ms-4">Soll Lio seine Handlungen/Aktionen
+                    schnell oder langsam durchführen?</p>
+            </div>
+            <div class="mt-4 ps-5 col float-end border-secondary border-bottom">
+                <span class="fs-5 ms-3 ps-4"><strong>Schnell</strong></span>
+                <input type="range" class="range-field w-70 ms-2" min="0" max="1" name="fq5">
+                <span class="fs-5"><strong>Langsam</strong></span>
+            </div>
+            <br> <br>
         </div>
-        <div class="mt-4 col float-end border-secondary border-bottom">
-            <span class="fs-5"><strong>Nein</strong></span> <input type="range"
-                                                                   class="range-field w-70" min="0" max="1">
-            <span
-                    class="fs-5"><strong>Ja</strong></span>
+        <div class="row ms-2 me-2">
+            <div style="display: flex;"
+                 class="col-8 border-secondary border-bottom mt-3">
+                <button type="button"
+                        class="btn btn-primary btn-circle btn-sm mt-1 ms-2 fs-6"
+                        data-bs-toggle="tooltip" data-bs-placement="right"
+                        title="Wenn die Option Mundart gewählt wird, wird eine Schweizer Mundart für die Sprachfunktion von Lio verwendet. Ansonsten gilt Standardsprache.">
+                    ?
+                </button>
+                <p class="fs-4 ms-4">Soll Lio in Mundart oder Schriftsprache
+                    antworten?</p>
+            </div>
+            <div class="mt-4 ps-4 col float-end border-secondary border-bottom">
+                <span class="fs-5 ms-1"><strong>Schriftsprache</strong></span>
+                <input type="range" class="range-field w-70" min="0" max="1" name="fq6">
+                <span class="fs-5"><strong>Mundart</strong></span>
+            </div>
+            <br> <br>
         </div>
-        <br> <br>
-    </div>
-    <div class="row ms-2 me-2">
-        <div style="display: flex;"
-             class="col-9 border-secondary border-bottom mt-3">
-            <button type="button"
-                    class="btn btn-primary btn-circle btn-sm mt-1 ms-2 fs-6"
-                    data-bs-toggle="tooltip" data-bs-placement="right"
-                    title="Wenn diese Funktion aktiviert wird, überbrückt Lio Wartezeiten mit Witzen, Gespräche oder andere Aktivitäten.">
-                ?
-            </button>
-            <p class="fs-4 ms-4">Soll Lio Wartezeiten mit Aktionen
-                überbrücken?</p>
+        <div class=row>
+            <div class="col-3 mb-3 mt-3">
+                <a id="backToTransparencyViewBtn" type="button"
+                   class="btn
+					btn-light me-4">Zurück </a>
+                <a id="save"  type="button" class="btn btn-light">Speichern</a>
+            </div>
         </div>
-        <div class="mt-4 col float-end border-secondary border-bottom">
-            <span class="fs-5"><strong>Nein</strong></span> <input type="range"
-                                                                   class="range-field w-70" min="0" max="1">
-            <span
-                    class="fs-5"><strong>Ja</strong></span>
-        </div>
-        <br> <br>
-    </div>
-    <div class="row ms-2 me-2">
-        <div style="display: flex;"
-             class="col-8 border-secondary border-bottom mt-3">
-            <button type="button"
-                    class="btn btn-primary btn-circle btn-sm mt-1 ms-2 fs-6"
-                    data-bs-toggle="tooltip" data-bs-placement="right"
-                    title="Bei dieser Funktion werden je nach Auswahl Lios Handlungen / Aktionen schneller oder langsamer durchgeführt.">
-                ?
-            </button>
-            <p class="fs-4 ms-4">Soll Lio seine Handlungen/Aktionen
-                schnell oder langsam durchführen?</p>
-        </div>
-        <div class="mt-4 ps-5 col float-end border-secondary border-bottom">
-            <span class="fs-5 ms-3 ps-4"><strong>Schnell</strong></span> <input
-                type="range" class="range-field w-70 ms-2" min="0" max="1">
-            <span class="fs-5"><strong>Langsam</strong></span>
-        </div>
-        <br> <br>
-    </div>
-    <div class="row ms-2 me-2">
-        <div style="display: flex;"
-             class="col-8 border-secondary border-bottom mt-3">
-            <button type="button"
-                    class="btn btn-primary btn-circle btn-sm mt-1 ms-2 fs-6"
-                    data-bs-toggle="tooltip" data-bs-placement="right"
-                    title="Wenn die Option Mundart gewählt wird, wird eine Schweizer Mundart für die Sprachfunktion von Lio verwendet. Ansonsten gilt Standardsprache.">
-                ?
-            </button>
-            <p class="fs-4 ms-4">Soll Lio in Mundart oder Schriftsprache
-                antworten?</p>
-        </div>
-        <div class="mt-4 ps-4 col float-end border-secondary border-bottom">
-            <span class="fs-5 ms-1"><strong>Schriftsprache</strong></span> <input
-                type="range" class="range-field w-70" min="0" max="1"> <span
-                class="fs-5"><strong>Mundart</strong></span>
-        </div>
-        <br> <br>
-    </div>
-    <div class=row>
-        <div class="col-3 mb-3 mt-3">
-            <a href="#" id="backToTransparencyViewBtn" type="button"
-               class="btn
-					btn-light me-4">Zurück </a> <a href="#"
-                                                   th:href="@{/homeUserView}" type="button"
-                                                   class="btn
-					btn-light">Weiter zu Home</a>
-        </div>
-    </div>
+    </form>
 </div>

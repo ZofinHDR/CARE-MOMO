@@ -1,6 +1,6 @@
 <div id="infoView" th:fragment="infoView">
     <div class="container mt-4">
-        <form>
+        <form id="formPerson">
             <div class="row">
                 <div class="col-5">
                     <div class="row">
@@ -8,7 +8,7 @@
                             <label class="fs-5 col-form-label">Name: </label>
                         </div>
                         <div class="col">
-                            <input style="width: 75%;" type="text" class="form-control">
+                            <input style="width: 75%;" type="text" name = "name" class="form-control">
                         </div>
                     </div>
                     <div class="row">
@@ -16,7 +16,7 @@
                             <label class="fs-5 col-form-label">Geburtstag: </label>
                         </div>
                         <div class="col">
-                            <input style="width: 75%;" type="date" class="form-control">
+                            <input style="width: 75%;" type="date" name="birthday" class="form-control">
                         </div>
                     </div>
                     <div class="row">
@@ -25,10 +25,10 @@
                         </div>
                         <div class="col">
                             <select class="form-select" style="width: 75%;"
-                                    name="selectGender" id="selectGender">
+                                    name="gender" id="selectGender">
                                 <option value="Male">Männlich</option>
                                 <option value="Female">Weiblich</option>
-                                <option value="Non-binary">Non Binär</option>
+                                <option value="Non_binary">Non Binär</option>
                             </select>
                         </div>
                     </div>
@@ -38,7 +38,7 @@
                         </div>
                         <div class="col">
                             <select class="form-select" style="width: 75%;"
-                                    name="selectReligion" id="selectReligion">
+                                    name="religion" id="selectReligion">
                                 <option value="christianity">Christlich</option>
                                 <option value="catholic">Katholisch</option>
                                 <option value="protestant">Protestantisch</option>
@@ -53,7 +53,7 @@
                             <label class="fs-5 col-form-label">Hobbys: </label>
                         </div>
                         <div class="col">
-                            <input type="text" style="width: 75%;" class="form-control">
+                            <input type="text" style="width: 75%;" name="hobby" class="form-control">
                         </div>
                     </div>
                 </div>
@@ -63,7 +63,7 @@
                             <label class="fs-5 col-form-label">Spitzname: </label>
                         </div>
                         <div class="col">
-                            <input style="width: 75%;" type="text" class="form-control">
+                            <input style="width: 75%;" type="text" name="nickname" class="form-control">
                         </div>
                     </div>
                     <div class="row">
@@ -71,7 +71,7 @@
                             <label class="fs-5 col-form-label">Nationalität: </label>
                         </div>
                         <div class="col">
-                            <input style="width: 75%;" type="text" class="form-control">
+                            <input style="width: 75%;" type="text" name="nationality" class="form-control">
                         </div>
                     </div>
                     <div class="row">
@@ -80,7 +80,7 @@
                         </div>
                         <div class="col">
                             <select class="form-select" style="width: 75%;"
-                                    name="selectSexuality" id="selectSexuality">
+                                    name="sexuality" id="selectSexuality">
                                 <option value="straight">Heterosexuell</option>
                                 <option value="gay">Homosexuell</option>
                                 <option value="other">Anderes</option>
@@ -92,7 +92,7 @@
                             <label class="fs-5 col-form-label">Letzter Beruf: </label>
                         </div>
                         <div class="col">
-                            <input style="width: 75%;" type="text" class="form-control">
+                            <input style="width: 75%;" type="text" name="lastJob" class="form-control">
                         </div>
                     </div>
                 </div>
@@ -110,7 +110,7 @@
     </div>
     <div class=row>
         <div class="col-3 mb-3 mt-3">
-            <a href="#" th:href="@{/homeUserView}" type="button"
+            <a th:href="@{/homeUserView}" type="button"
                class="btn
 					btn-light me-4">Zurück zu Home</a>
 

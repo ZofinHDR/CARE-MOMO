@@ -9,6 +9,7 @@ import com.example.mypkg.model.enums.Religion;
 import com.example.mypkg.model.enums.Sexuality;
 import com.example.mypkg.reposetories.ResidentRepo;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -25,19 +26,15 @@ public class CreateDataResident implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        /*
-       //Jackson -> Java Klasse zu JSON später für Testing Post-method usw.
-        ObjectMapper objectMapper = new ObjectMapper();
-        objectMapper.writeValueAsString()
-         */
+
 
         ////Create Resident
         Resident resident = new Resident();
         resident.setName("Maksym");
         resident.setBirthday(LocalDate.now());
-        resident.setGender(Gender.MALE);
-        resident.setReligion(Religion.ATHEIST);
-        resident.setSexuality(Sexuality.STRAIGHT);
+        resident.setGender(Gender.Male);
+        resident.setReligion(Religion.atheist);
+        resident.setSexuality(Sexuality.straight);
         resident.setHobby("Boxen");
         resident.setNickname("Max");
         resident.setNationality("Ukraine");
@@ -71,6 +68,14 @@ public class CreateDataResident implements CommandLineRunner {
         resident.setTransparency(transparency);
         resident.setFunctionality(functionality);
 
-        residentRepo.save(resident);
+        resident = residentRepo.save(resident);
+        //Jackson → Java Klasse zu JSON später für Testing Post-method usw.
+        ObjectMapper objectMapper = new ObjectMapper();
+        objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
+        objectMapper.findAndRegisterModules();
+        String residentString = objectMapper.writeValueAsString(resident);
+
+        System.out.println(residentString);
+
     }
 }
