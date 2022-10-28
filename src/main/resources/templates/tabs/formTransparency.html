@@ -1,0 +1,71 @@
+<div id="transparencyView" th:fragment="transparencyView">
+    <div class="row ms-2 me-2">
+        <div style="display: flex;"
+             class="col-9 border-secondary border-bottom mt-3">
+            <button type="button"
+                    class="btn btn-primary btn-circle btn-sm mt-1 ms-2 fs-6"
+                    data-bs-toggle="tooltip" data-bs-placement="right"
+                    title="Wenn diese Funktion aktiviert wird, teilt Lio dir immer mit, wenn er über das Nursing-Interface gesteuert wird.">
+                ?
+            </button>
+            <p class="fs-4 ms-4">Soll Lio mitteilen, wenn das
+                Nursing-Interface verwendet wird?</p>
+        </div>
+        <div class="mt-4 col float-end border-secondary border-bottom">
+            <span class="fs-5"><strong>Nein</strong></span> <input type="range"
+                                                                   class="range-field w-70" min="0" max="1">
+            <span
+                    class="fs-5"><strong>Ja</strong></span>
+        </div>
+        <br> <br>
+    </div>
+    <div class="row ms-2 me-2">
+        <div style="display: flex;"
+             class="col-9 border-secondary border-bottom mt-3">
+            <button type="button"
+                    class="btn btn-primary btn-circle btn-sm mt-1 ms-2 fs-6"
+                    data-bs-toggle="tooltip" data-bs-placement="right"
+                    title="Wenn diese Funktion aktiviert wird, teilt Lio dir immer mit, wenn seine Kamera eingeschaltet wurde.">
+                ?
+            </button>
+            <p class="fs-4 ms-4">Soll Lio mitteilen, wenn die Kamera
+                eingeschaltet oder benutzt wird?</p>
+        </div>
+        <div class="mt-4 col float-end border-secondary border-bottom">
+            <span class="fs-5"><strong>Nein</strong></span> <input type="range"
+                                                                   class="range-field w-70" min="0" max="1">
+            <span
+                    class="fs-5"><strong>Ja</strong></span>
+        </div>
+        <br> <br>
+    </div>
+    <div class="row ms-2 me-2">
+        <div style="display: flex;"
+             class="col-9 border-secondary border-bottom mt-3">
+            <button type="button"
+                    class="btn btn-primary btn-circle btn-sm mt-1 ms-2 fs-6"
+                    data-bs-toggle="tooltip" data-bs-placement="right"
+                    title="Wenn diese Funktion aktiviert wird, erinnert Lio dich von Zeit zu Zeit, dass er nur ein Roboter ist. ">
+                ?
+            </button>
+            <p class="fs-4 ms-4">Soll Lio immer wieder mitteilen, dass er
+                ein Roboter ist?</p>
+        </div>
+        <div class="mt-4 col float-end border-secondary border-bottom">
+            <span class="fs-5"><strong>Nein</strong></span> <input type="range"
+                                                                   class="range-field w-70" min="0" max="1">
+            <span
+                    class="fs-5"><strong>Ja</strong></span>
+        </div>
+        <br> <br>
+    </div>
+    <div class=row>
+        <div class="col-3 mb-3 mt-3">
+            <a href="#" id="backToSocialViewBtn" type="button"
+               class="btn
+					btn-light me-4">Zurück </a> <a id="hideTransparencyViewBtn"  type="button"
+                                                   class="btn
+					btn-light">Weiter</a>
+        </div>
+    </div>
+</div>

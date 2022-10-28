@@ -1,0 +1,122 @@
+<div id="infoView" th:fragment="infoView">
+    <div class="container mt-4">
+        <form>
+            <div class="row">
+                <div class="col-5">
+                    <div class="row">
+                        <div class="col-4">
+                            <label class="fs-5 col-form-label">Name: </label>
+                        </div>
+                        <div class="col">
+                            <input style="width: 75%;" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <label class="fs-5 col-form-label">Geburtstag: </label>
+                        </div>
+                        <div class="col">
+                            <input style="width: 75%;" type="date" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <label class="fs-5 col-form-label">Geschlecht: </label>
+                        </div>
+                        <div class="col">
+                            <select class="form-select" style="width: 75%;"
+                                    name="selectGender" id="selectGender">
+                                <option value="Male">Männlich</option>
+                                <option value="Female">Weiblich</option>
+                                <option value="Non-binary">Non Binär</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <label class="fs-5 col-form-label">Religion: </label>
+                        </div>
+                        <div class="col">
+                            <select class="form-select" style="width: 75%;"
+                                    name="selectReligion" id="selectReligion">
+                                <option value="christianity">Christlich</option>
+                                <option value="catholic">Katholisch</option>
+                                <option value="protestant">Protestantisch</option>
+                                <option value="muslim">Muslimisch</option>
+                                <option value="jews">Jüdisch</option>
+                                <option value="atheist">Atheist</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <label class="fs-5 col-form-label">Hobbys: </label>
+                        </div>
+                        <div class="col">
+                            <input type="text" style="width: 75%;" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="row">
+                        <div class="col-4">
+                            <label class="fs-5 col-form-label">Spitzname: </label>
+                        </div>
+                        <div class="col">
+                            <input style="width: 75%;" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <label class="fs-5 col-form-label">Nationalität: </label>
+                        </div>
+                        <div class="col">
+                            <input style="width: 75%;" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <label class="fs-5 col-form-label">Sexualität: </label>
+                        </div>
+                        <div class="col">
+                            <select class="form-select" style="width: 75%;"
+                                    name="selectSexuality" id="selectSexuality">
+                                <option value="straight">Heterosexuell</option>
+                                <option value="gay">Homosexuell</option>
+                                <option value="other">Anderes</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <label class="fs-5 col-form-label">Letzter Beruf: </label>
+                        </div>
+                        <div class="col">
+                            <input style="width: 75%;" type="text" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="row">
+                        <div>
+                            <img alt="Lio" src="face.png" height="100" width="100"
+                                 class="mx-auto d-block"/>
+                        </div>
+                        <button class="btn btn-light mt-2">Foto aufnehmen</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class=row>
+        <div class="col-3 mb-3 mt-3">
+            <a href="#" th:href="@{/homeUserView}" type="button"
+               class="btn
+					btn-light me-4">Zurück zu Home</a>
+
+            <a id="hideInfoViewBtn" type="button"
+               class="btn
+					btn-light">Weiter</a>
+        </div>
+    </div>
+</div>
