@@ -17,18 +17,4 @@ public class ViewsController {
 		return "infoUserView";
 	}
 
-	@GetMapping("/socialUserView")
-	public String socialUserView() {
-		return "socialUserView";
-	}
-
-	@GetMapping("/transparencyUserView")
-	public String transparencyUserView() {
-		return "transparencyUserView";
-	}
-
-	@GetMapping("/functionalityUserView")
-	public String functionalityUserView() {
-		return "functionalityUserView";
-	}
 }
