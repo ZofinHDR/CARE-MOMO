@@ -1,4 +1,4 @@
-package com.example.mypkg.bootstrap;
+package com.example.mypkg.createResident;
 
 import com.example.mypkg.model.Functionality;
 import com.example.mypkg.model.Resident;
@@ -28,17 +28,17 @@ public class CreateDataResident implements CommandLineRunner {
     public void run(String... args) throws Exception {
 
 
-        ////Create Resident
+        ////Create example Resident
         Resident resident = new Resident();
-        resident.setName("Maksym");
+        resident.setName("Marc Heimann");
         resident.setBirthday(LocalDate.now());
         resident.setGender(Gender.Male);
         resident.setReligion(Religion.atheist);
         resident.setSexuality(Sexuality.straight);
-        resident.setHobby("Boxen");
-        resident.setNickname("Max");
-        resident.setNationality("Ukraine");
-        resident.setLastJob("LastJob");
+        resident.setHobby("Sport");
+        resident.setNickname("Mafi");
+        resident.setNationality("Schweiz");
+        resident.setLastJob("IT");
 
         ////Create Social
         Social social = new Social();
@@ -52,7 +52,6 @@ public class CreateDataResident implements CommandLineRunner {
         transparency.setTq1(false);
         transparency.setTq2(true);
         transparency.setTq3(false);
-        transparency.setTq4(true);
 
         ////Create Functionality
         Functionality functionality = new Functionality();
@@ -60,8 +59,8 @@ public class CreateDataResident implements CommandLineRunner {
         functionality.setFq2(false);
         functionality.setFq3(true);
         functionality.setFq4(false);
-        functionality.setFq5("Lol keine Antwort");
-        functionality.setFq6("Lol keine Antwort");
+        functionality.setFq5("t.b.d");
+        functionality.setFq6("t.b.d");
 
         ////Add Dependencies to Resident
         resident.setSocial(social);

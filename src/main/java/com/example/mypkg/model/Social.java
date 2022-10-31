@@ -23,6 +23,7 @@ public class Social {
 
     private Boolean sq4;
 
+
     public Long getId() {
         return id;
     }
@@ -55,11 +56,7 @@ public class Social {
         this.sq3 = sq3;
     }
 
-    public Boolean getSq4() {
-        return sq4;
-    }
+    public Boolean getSq4() { return sq4; }
 
-    public void setSq4(Boolean sq4) {
-        this.sq4 = sq4;
-    }
+    public void setSq4(Boolean sq4) { this.sq4 = sq4; }
 }

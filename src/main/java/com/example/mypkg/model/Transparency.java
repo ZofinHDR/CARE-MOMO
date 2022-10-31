@@ -21,8 +21,6 @@ public class Transparency {
 
     private Boolean tq3;
 
-    private Boolean tq4;
-
     public Long getId() {
         return id;
     }
@@ -55,11 +53,4 @@ public class Transparency {
         return tq3;
     }
 
-    public void setTq4(Boolean tq4) {
-        this.tq4 = tq4;
-    }
-
-    public Boolean getTq4() {
-        return tq4;
-    }
 }
